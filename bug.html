@@ -1,0 +1,23 @@
+<html>
+
+  <head>
+    <title>Elm touch bug</title>
+    <script type="text/javascript" src="elm.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  </head>
+
+  <body>
+    <h1>Elm bug</h1>
+    <div id="control"></div>
+	
+	<div style="background-color:red">Click here with console open to see error</div>
+  </body>
+
+  <script type="text/javascript">
+    var div = document.getElementById('control');
+
+    var myApp = Elm.embed(Elm.Bug, div);
+
+  </script>
+
+</html>
